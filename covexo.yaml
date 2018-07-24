@@ -1,4 +1,4 @@
-name: React
+name: my-react-app
 containers:
   - name: nodejs
     image: 'node:9.4'
