@@ -1,0 +1,21 @@
+name: React
+containers:
+  - name: nodejs
+    image: 'node:9.4'
+    runtimeOptions:
+      cmd: run start
+      workDir: /app
+      entryPoint: npm
+    initScript: |-
+      npx create-react-app my-react-app
+      mv my-react-app/* ./
+      rm -r my-react-app/
+    env:
+      NODE_ENV: dev
+    persistentFolders:
+      - name: source-code
+        localSubPath: ./
+        containerPath: /app
+    routes:
+      - hostPrefix: ''
+        containerPort: 3000
