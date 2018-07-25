@@ -3,7 +3,7 @@ containers:
   - name: nodejs
     image: node:9.4
     runtimeOptions:
-      cmd: run start
+      cmd: start
       workDir: /app
       entryPoint: npm
     initScript: |-
