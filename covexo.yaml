@@ -1,4 +1,4 @@
-name: my-react-app
+name: app
 containers:
   - name: nodejs
     image: node:9.4
@@ -7,14 +7,12 @@ containers:
       workDir: /app
       entryPoint: npm
     initScript: |-
-      mv  my-react-app/* ./
-      rm -r my-react-app/
       npm install
     env:
       NODE_ENV: dev
     persistentFolders:
       - name: source-code
-        localSubPath: ./
+        localSubPath: ./app
         containerPath: /app
     routes:
       - hostPrefix: ''
