@@ -9,8 +9,7 @@
 
 # What is React?
 
-ReactJS is a component based library which is used to develop interactive user interfaces. It is currently the most popular front-end Javascript library. See https://reactjs.org/
-
+[ReactJS](https://reactjs.org/) is a component based library which is used to develop interactive user interfaces. It is currently the most popular front-end Javascript library.
 # What is covexo?
 
 ## 
